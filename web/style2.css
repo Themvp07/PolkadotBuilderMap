@@ -1,0 +1,281 @@
+/* Overlay modal background */
+  .popup-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+
+  /* Modal content box */
+  .popup-content {
+    background-color: #1e1e2f;
+    color: white;
+    padding: 24px 32px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Close button styling */
+  .popup-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+  }
+
+  .popup-close-btn:hover {
+    color: white;
+  }
+
+  /* Link styles inside modal */
+  .popup-content a {
+    color: #4dabf7;
+    text-decoration: underline;
+  }
+
+  .popup-content h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #e6007a;
+  }
+
+/* Reset and global page styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;        /* Dark background color */
+  font-family: Arial, sans-serif;/* Global font family */
+  height: 100%;
+  width: 100%;
+  overflow: hidden;              /* Prevents scrolling on the body */
+}
+
+/* Main map container, allows scrolling if content exceeds viewport size */
+#map-wrapper {
+  width: 100vw;                  /* Takes full viewport width */
+  height: 100vh;                 /* Takes full viewport height */
+  overflow: auto;                /* Allows scrolling when needed */
+  position: relative;            /* Enables absolute positioning of children */
+}
+
+/* Container for applying zoom via CSS transform */
+#zoom-container {
+  width: fit-content;            /* Width adjusts to content (image) */
+  height: fit-content;
+  transform-origin: top left;    /* Zoom origin point set to top-left corner */
+}
+
+/* Container for the image and interactive dots */
+#zoomable {
+  position: relative;            /* Allows absolute positioning of dots inside */
+  display: inline-block;         /* Behaves as an inline block with fit-content */
+}
+
+/* Map image styling */
+#map-image {
+  display: block;                /* Removes extra space under the image */
+  width: 100%;                   /* Takes full width of its container */
+  height: auto;                  /* Maintains aspect ratio */
+  user-select: none;             /* Prevents text/image selection */
+  -webkit-user-drag: none;       /* Disables dragging in Webkit browsers */
+}
+
+/* Base style for interactive dots */
+.dot {
+  position: absolute;            /* Positioned within #zoomable */
+  border-radius: 50%;            /* Makes the dot circular */
+  cursor: pointer;               /* Hand cursor on hover */
+  z-index: 2;                    /* Above the image */
+  transform: translate(-50%, -50%); /* Centers the dot at its coordinate */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Semi-transparent white border */
+}
+
+/* Reusable colors for dot backgrounds */
+.dot-color-red   { background-color: #e6007b59; } /* Transparent pink */
+.dot-color-green { background-color: #00e6775f; } /* Transparent green */
+.dot-color-blue  { background-color: #29b5f65e; } /* Transparent blue */
+
+/* Zoom controls container (buttons + and -) */
+.zoom-control {
+  position: fixed;               /* Always visible on screen */
+  bottom: 20px;
+  right: 20px;
+  display: flex;                 /* Buttons side by side */
+  gap: 10px;                     /* Space between buttons */
+  z-index: 999;                  /* Stays above most elements */
+}
+
+/* Zoom button styling */
+.zoom-btn {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(189, 190, 226, 0.529); /* Semi-transparent background */
+  color: rgb(79, 95, 243);       /* Blue text color */
+  font-size: 24px;
+  border: 2px solid rgba(114, 114, 251, 0.513); /* Light border */
+  border-radius: 8px;            /* Rounded corners */
+  cursor: pointer;               /* Pointer cursor on hover */
+}
+
+/* Tooltip popup styling */
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark semi-transparent background */
+  color: white;
+  padding: 12px;
+  border-radius: 8px;            /* Rounded corners */
+  max-width: 250px;
+  z-index: 1000;                 /* Appears above all other elements */
+  display: none;                 /* Hidden by default */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  pointer-events: auto;          /* Allows interaction with tooltip */
+}
+
+/* Tooltip heading */
+.tooltip h3 {
+  margin-top: 0;
+  color: #e6007a;                /* Highlighted title color */
+}
+
+/* Small text inside tooltip */
+.tooltip small {
+  display: block;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Close button for the tooltip */
+.tooltip-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: #ccc;
+  cursor: pointer;
+}
+
+/* Hover effect for close button */
+.tooltip-close:hover {
+  color: white;
+}
+
+/* Contenedor de los botones */
+.action-buttons {
+  position: fixed;
+  bottom: 90px; /* Ajusta según necesites */
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Estilo base de los botones personalizados */
+.custom-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 44px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #3f5efb, #00c6ff); /* Azul degradado */
+  border: none;
+  cursor: pointer;
+}
+
+/* Variante para el botón de Foro */
+.btn-forum {
+  background: linear-gradient(135deg, #7f00ff, #e100ff); /* Morado vibrante */
+}
+
+/* Variante para el botón de Repositorio */
+.btn-repo {
+  background: linear-gradient(135deg, #00c6ff, #077eff); /* Azul profundo */
+}
+
+/* Efecto hover */
+.custom-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto presionado */
+.custom-btn:active {
+  transform: translateY(0);
+}
+
+/*Language button settings*/
+
+.language-dropdown {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+  text-align: left;
+}
+
+.lang-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgb(207, 22, 22);
+  color: rgb(0, 0, 0);
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: rgba(157, 33, 33, 0.222);
+}
+
+.lang-options {
+  display: none;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background: #714b4b;
+  border: 1px solid rgba(249, 18, 18, 0.832);
+  border-radius: 6px;
+  min-width: 140px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 4px 0;
+}
+
+.lang-options button {
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.lang-options button:hover,
+.lang-options button.active {
+  background: rgba(255, 255, 255, 0.1);
+}
