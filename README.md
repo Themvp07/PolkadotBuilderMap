@@ -1,6 +1,6 @@
 # Polkadot Builder Map - Interactive
 
-![Polkadot Builder Map](images/map.JPG)
+![Polkadot Builder Map](images/mapv2.png)
 
 Interactive tool for exploring Polkadot's technical architecture. 
 Visualizes core ecosystem components with detailed information, programming language used and links to official documentation.
