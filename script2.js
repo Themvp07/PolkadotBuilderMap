@@ -239,7 +239,7 @@ const dotsData = [
     source: { icon: "◇", type: "JavaScript, TypeScript", url: "https://docs.polkadot.com/develop/toolkit/api-libraries/", label: "substrate.dev" }
   },  
   {
-    x: 0.264, y: 0.272, colorClass: 'dot-color-red', radius: 5,
+    x: 0.208, y: 0.235, colorClass: 'dot-color-red', radius: 5,
     title: "Network interactions",
     text: {
     en: "List of examples that takes you through the basics of connecting to a local node, retrieving data from the Node and chain and execute transactions on the chain. It uses the [[ApiPromise]] interface.",
@@ -287,7 +287,7 @@ const dotsData = [
     source: { icon: "◇", type: "javascript, typescript, html", url: "https://polkadot.js.org/docs/", label: "substrate.dev" }
   },
   {
-    x: 0.348, y: 0.36, colorClass: 'dot-color-red', radius: 5,
+    x: 0.348, y: 0.327, colorClass: 'dot-color-red', radius: 5,
     title: "PAPI",
     text: {
     en: "Polkadot-API (PAPI) is a set of libraries built to be modular, composable, and grounded in a “light-client first” approach. Its primary aim is to equip dApp developers with an extensive toolkit for building fully decentralized applications.",
@@ -303,7 +303,7 @@ const dotsData = [
     source: { icon: "◇", type: "Typescript", url: "https://papi.how/", label: "substrate.dev" }
   },
   {
-    x: 0.352, y: 0.455, colorClass: 'dot-color-red', radius: 5,
+    x: 0.352, y: 0.44, colorClass: 'dot-color-red', radius: 5,
     title: "Snowbridge",
     text: {
     en: "Snowbridge by Snowfork is a general-purpose, trustless bridge between Polkadot and Ethereum. It utilizes the Bridge Hub system parachain to establish a connection to its relayers, allowing for permissionless and trustless messaging between Ethereum and Polkadot.",
@@ -319,7 +319,7 @@ const dotsData = [
     source: { icon: "◇", type: "go, typescript, solidity, rust", url: "https://github.com/snowfork/snowbridge", label: "substrate.dev" }
   },
   {
-    x: 0.36, y: 0.578, colorClass: 'dot-color-red', radius: 5,
+    x: 0.36, y: 0.535, colorClass: 'dot-color-red', radius: 5,
     title: "Polkassembly",
     text: {
     en: "Polkassembly is a platform specifically designed to foster open, transparent discussions around Polkadot and Kusama governance proposals. By bridging on-chain decisions with off-chain discussions, Polkassembly ensures that the community remains at the heart of the decision-making process.",
@@ -333,9 +333,41 @@ const dotsData = [
 
     },
     source: { icon: "◇", type: "Typescript", url: "https://github.com/polkassembly/polkassembly", label: "substrate.dev" }
+  },  
+  {
+    x: 0.34, y: 0.613, colorClass: 'dot-color-red', radius: 5,
+    title: "Apillon",
+    text: {
+    en: "Apillon is a unified Web3 development platform that abstracts the complexity of Polkadot parachains into a single, easy-to-use API layer—enabling developers to harness services like identity (KILT), storage and hosting (Crust), computing (Phala and Acurast) and smart contracts (Moonbeam and Astar) without needing deep blockchain expertise.",
+    es: "Apillon es una plataforma unificada de desarrollo Web3 que simplifica la complejidad de las parachains de Polkadot en una única capa API fácil de usar, permitiendo a los desarrolladores aprovechar servicios como identidad (KILT), almacenamiento y hosting (Crust), computación (Phala y Acurast) y contratos inteligentes (Moonbeam y Astar) sin necesidad de tener un conocimiento profundo de blockchain.",
+    pt: "Apillon é uma plataforma unificada de desenvolvimento Web3 que abstrai a complexidade das parachains da Polkadot em uma única camada de API fácil de usar - permitindo que os desenvolvedores utilizem serviços como identidade (KILT), armazenamento e hospedagem (Crust), computação (Phala e Acurast) e contratos inteligentes (Moonbeam e Astar) sem necessidade de profundo conhecimento em blockchain.",
+    fr: "Apillon est une plateforme de développement Web3 unifiée qui abstrait la complexité des parachains Polkadot en une seule couche API facile à utiliser, permettant aux développeurs d'exploiter des services tels que l'identité (KILT), le stockage et l'hébergement (Crust), le calcul (Phala et Acurast) et les contrats intelligents (Moonbeam et Astar) sans avoir besoin d'une expertise approfondie en blockchain.",
+    de: "Apillon ist eine vereinheitlichte Web3-Entwicklungsplattform, die die Komplexität von Polkadot-Parachains in eine einzige, einfach zu verwendende API-Schicht abstrahiert - wodurch Entwickler Dienste wie Identität (KILT), Speicher und Hosting (Crust), Computing (Phala und Acurast) und Smart Contracts (Moonbeam und Astar) nutzen können, ohne tiefgehende Blockchain-Expertise zu benötigen.",
+    af: "Apillon is 'n verenigde Web3-ontwikkelingsplatform wat die kompleksiteit van Polkadot-parachains abstraheer in 'n enkele, maklik-om-te-gebruik API-laag - wat ontwikkelaars in staat stel om dienste soos identiteit (KILT), stoor en hosting (Crust), rekenaarkrag (Phala en Acurast) en slim kontrakte (Moonbeam en Astar) te benut sonder dieper blockchain-kundigheid.",
+    zh: "Apillon是一个统一的Web3开发平台，将Polkadot平行链的复杂性抽象为单一、易用的API层，使开发者无需深厚区块链专业知识即可使用身份认证(KILT)、存储与托管(Crust)、计算(Phala和Acurast)和智能合约(Moonbeam和Astar)等服务。",
+    hi: "Apillon एक एकीकृत Web3 डेवलपमेंट प्लेटफॉर्म है जो Polkadot पैराचेन्स की जटिलता को एक सरल, उपयोग में आसान API लेयर में सरलीकृत करता है - जिससे डेवलपर्स बिना गहन ब्लॉकचेन विशेषज्ञता के आइडेंटिटी (KILT), स्टोरेज और होस्टिंग (Crust), कंप्यूटिंग (Phala और Acurast) और स्मार्ट कॉन्ट्रैक्ट्स (Moonbeam और Astar) जैसी सेवाओं का उपयोग कर सकते हैं।"
+
+    },
+    source: { icon: "◇", type: "Typescript, javascrip", url: "https://apillon.io/", label: "substrate.dev" }
   },
   {
-    x: 0.347, y: 0.733, colorClass: 'dot-color-red', radius: 5,
+    x: 0.265, y: 0.613, colorClass: 'dot-color-red', radius: 5,
+    title: "Apillon SDK",
+    text: {
+    en: "The Apillon Web3 Development tools is an open-source toolset that makes it easy to build and deploy decentralized applications on the blockchain. It includes a command-line interface (CLI) for managing your projects, as well as a software development kit (SDK) for integrating with the Apillon APIs.",
+    es: "Las herramientas de desarrollo Web3 de Apillon son un conjunto de herramientas de código abierto que facilita la creación e implementación de aplicaciones descentralizadas en la blockchain. Incluye una interfaz de línea de comandos (CLI) para gestionar tus proyectos, así como un kit de desarrollo de software (SDK) para integrarse con las APIs de Apillon.",
+    pt: "As ferramentas de desenvolvimento Web3 da Apillon são um conjunto de ferramentas de código aberto que facilita a construção e implantação de aplicativos descentralizados na blockchain. Inclui uma interface de linha de comando (CLI) para gerenciar seus projetos, bem como um kit de desenvolvimento de software (SDK) para integração com as APIs da Apillon.",
+    fr: "Les outils de développement Web3 d'Apillon constituent une suite open-source qui facilite la création et le déploiement d'applications décentralisées sur la blockchain. Ils incluent une interface en ligne de commande (CLI) pour gérer vos projets, ainsi qu'un kit de développement logiciel (SDK) pour l'intégration avec les API Apillon.",
+    de: "Die Apillon Web3-Entwicklungstools sind ein Open-Source-Toolset, das das Erstellen und Bereitstellen dezentraler Anwendungen auf der Blockchain vereinfacht. Es beinhaltet eine Kommandozeilenschnittstelle (CLI) zur Verwaltung Ihrer Projekte sowie ein Software Development Kit (SDK) für die Integration mit den Apillon-APIs.",
+    af: "Die Apillon Web3-ontwikkelingsgereedskap is 'n oopbron-gereedskapstel wat dit maklik maak om gedesentraliseerde toepassings op die blockchain te bou en te ontplooi. Dit sluit 'n opdragreëlkoppelvlak (CLI) in vir die bestuur van jou projekte, sowel as 'n sagteware-ontwikkelingspakket (SDK) vir integrasie met die Apillon API's.",
+    zh: "Apillon Web3开发工具是一套开源工具集，可轻松构建和部署区块链上的去中心化应用程序。它包括用于管理项目的命令行界面(CLI)，以及用于与Apillon API集成的软件开发工具包(SDK)。",
+    hi: "Apillon Web3 डेवलपमेंट टूल्स एक ओपन-सोर्स टूलसेट है जो ब्लॉकचेन पर विकेंद्रीकृत एप्लिकेशन बनाने और डिप्लॉय करने को आसान बनाता है। इसमें आपके प्रोजेक्ट्स को मैनेज करने के लिए कमांड-लाइन इंटरफेस (CLI) और Apillon APIs के साथ इंटीग्रेट करने के लिए सॉफ्टवेयर डेवलपमेंट किट (SDK) शामिल है।"
+
+    },
+    source: { icon: "◇", type: "Typescript, javascrip", url: "https://github.com/Apillon/sdk", label: "substrate.dev" }
+  },
+  {
+    x: 0.347, y: 0.69, colorClass: 'dot-color-red', radius: 5,
     title: "Subscan",
     text: {
     en: "Empower your blockchain ecosystem with Subscan's advanced explorer solutions. Delivering real-time data, modular design, and full branding customization, enhancing transparency and accessibility at every step.",
@@ -351,7 +383,7 @@ const dotsData = [
     source: { icon: "◇", type: "go, typescript, javascrip, rust, html", url: "https://github.com/subscan-explorer", label: "substrate.dev" }
   },
   {
-    x: 0.342, y: 0.854, colorClass: 'dot-color-red', radius: 5,
+    x: 0.342, y: 0.82, colorClass: 'dot-color-red', radius: 5,
     title: "Subxt",
     text: {
     en: "The subxt library maintained by Parity, to work with and extract PolkadotSDK/substrate based chains data for both reading data and submitting extrinsics.",
@@ -367,7 +399,7 @@ const dotsData = [
     source: { icon: "◇", type: "Rust", url: "https://github.com/paritytech/subxt", label: "substrate.dev" }
   },
   {
-    x: 0.258, y: 0.36, colorClass: 'dot-color-red', radius: 5,
+    x: 0.258, y: 0.327, colorClass: 'dot-color-red', radius: 5,
     title: "Smoldot",
     text: {
     en: "Lightweight client for Substrate-based chains, such as Polkadot and Kusama.",
@@ -383,7 +415,7 @@ const dotsData = [
     source: { icon: "◇", type: "Rust", url: "https://github.com/smol-dot/smoldot", label: "substrate.dev" }
   },
   {
-    x: 0.258, y: 0.388, colorClass: 'dot-color-red', radius: 5,
+    x: 0.258, y: 0.355, colorClass: 'dot-color-red', radius: 5,
     title: "Metadata",
     text: {
     en: "The Metadata Explorer tool helps visualize the metadata of various parachains by retrieving the latest data directly from the chain using the polkadot-js api.",
@@ -399,7 +431,23 @@ const dotsData = [
     source: { icon: "◇", type: "TBD", url: "https://wiki.polkadot.network/general/metadata/", label: "substrate.dev" }
   },
   {
-    x: 0.253, y: 0.443, colorClass: 'dot-color-red', radius: 5,
+    x: 0.201, y: 0.327, colorClass: 'dot-color-red', radius: 5,
+    title: "Dedot",
+    text: {
+    en: "Designed to elevate the dapp development experience, Dedot is built & optimized to be lightweight and tree-shakable, offering precise Types & APIs suggestions for individual Polkadot SDK-based blockchains and ink! Smart Contracts. Dedot also helps dapps efficiently connect to multiple chains simultaneously as we head toward a seamless multi-chain future.",
+    es: "Diseñado para elevar la experiencia de desarrollo de dapps, Dedot está construido y optimizado para ser ligero y tree-shakable, ofreciendo sugerencias precisas de Tipos y APIs para cadenas individuales basadas en Polkadot SDK y contratos inteligentes ink!. Dedot también ayuda a las dapps a conectarse eficientemente a múltiples cadenas simultáneamente mientras avanzamos hacia un futuro multi-cadena sin fisuras.",
+    pt: "A ferramenta Metadata Explorer auxilia na visualização dos metadados de várias parachains, recuperando os dados mais recentes diretamente da chain usando a API do polkadot-js.",
+    fr: "Conçu pour améliorer l'expérience de développement d'applications décentralisées, Dedot est construit et optimisé pour être léger et tree-shakable, offrant des suggestions précises de Types et d'API pour les blockchains individuelles basées sur Polkadot SDK et les contrats intelligents ink!. Dedot aide également les dapps à se connecter efficacement à plusieurs chaînes simultanément alors que nous nous dirigeons vers un avenir multi-chaîne transparent.",
+    de: "Entwickelt, um das dApp-Entwicklungserlebnis zu verbessern, ist Dedot leichtgewichtig und tree-shakable konstruiert und optimiert, präzise Typen- und API-Vorschläge für individuelle Polkadot SDK-basierte Blockchains und ink! Smart Contracts bietend. Dedot hilft dApps auch, sich effizient mit mehreren Chains gleichzeitig zu verbinden, während wir uns einer nahtlosen Multi-Chain-Zukunft nähern.",
+    af: "Ontwerp om die dapp-ontwikkelingservaring te verbeter, Dedot is gebou en geoptimaliseer om liggewig en tree-shakable te wees, wat presiese Tipes- en API-voorstelle bied vir individuele Polkadot SDK-gebaseerde blockchains en ink! Slimme Kontrakte. Dedot help ook dapps om doeltreffend aan veelvuldige kettings gelyktydig te koppel soos ons op weg is na 'n naatlose multi-chain toekoms.",
+    zh: "Dedot旨在提升dapp开发体验，经过构建和优化后变得轻量且支持tree-shaking，为基于Polkadot SDK的独立区块链和ink!智能合约提供精准的类型和API建议。随着我们迈向无缝的多链未来，Dedot还能帮助dapp高效地同时连接多条链。",
+    hi: "dapp विकास अनुभव को बेहतर बनाने के लिए डिज़ाइन किया गया, Dedot हल्का और tree-shakable होने के लिए बनाया और अनुकूलित किया गया है, जो व्यक्तिगत Polkadot SDK-आधारित ब्लॉकचेन और ink! स्मार्ट कॉन्ट्रैक्ट्स के लिए सटीक प्रकार और API सुझाव प्रदान करता है। Dedot dapp को एक सहज मल्टी-चेन भविष्य की ओर बढ़ते हुए एक साथ कई चेन से कुशलता से जुड़ने में भी मदद करता है।"
+
+    },
+    source: { icon: "◇", type: "TypeScript", url: "https://github.com/dedotdev/dedot", label: "substrate.dev" }
+  },
+  {
+    x: 0.253, y: 0.42, colorClass: 'dot-color-red', radius: 5,
     title: "Snowfork ",
     text: {
     en: "Snowfork is a research and development group and an incubator of projects and developers that sprouted from a collection of elite developers, designers and product managers with years of experience collaborating on projects together.",
@@ -415,7 +463,7 @@ const dotsData = [
     source: { icon: "◇", type: "N/A", url: "https://snowfork.com/", label: "substrate.dev" }
   },
   {
-    x: 0.265, y: 0.48, colorClass: 'dot-color-red', radius: 5,
+    x: 0.265, y: 0.46, colorClass: 'dot-color-red', radius: 5,
     title: "Components",
     text: {
     en: "Our bridge enables communication between any Polkadot parachain and Ethereum using Polkadot's XCMP messaging protocol. Specifically, parachains can send XCM instructions to BridgeHub to use the bridge.",
@@ -431,7 +479,7 @@ const dotsData = [
     source: { icon: "◇", type: "TBD", url: "https://docs.snowbridge.network/architecture/components", label: "substrate.dev" }
   },
   {
-    x: 0.266, y: 0.55, colorClass: 'dot-color-red', radius: 5,
+    x: 0.266, y: 0.533, colorClass: 'dot-color-red', radius: 5,
     title: "Collectives",
     text: {
     en: "Collectives chain operates as a dedicated parachain exclusive to the Polkadot network with no counterpart on Kusama. This specialized infrastructure provides a foundation for various on-chain governance groups essential to Polkadot's ecosystem.",
@@ -447,7 +495,7 @@ const dotsData = [
     source: { icon: "◇", type: "TBD", url: "https://collectives.polkassembly.io/", label: "substrate.dev" }
   },
   {
-    x: 0.266, y: 0.582, colorClass: 'dot-color-red', radius: 5,
+    x: 0.34, y: 0.755, colorClass: 'dot-color-red', radius: 5,
     title: "Staking dashboard",
     text: {
     en: "The Polkadot Staking Dashboard is a tool only dedicated to staking on Polkadot, Kusama (Polkadot's canary network) and Westend (Polkadot's test network).",
@@ -460,10 +508,26 @@ const dotsData = [
     hi: "पोल्काडॉट स्टेकिंग डैशबोर्ड एक ऐसा टूल है जो विशेष रूप से पोल्काडॉट, कुसामा (पोल्काडॉट का कैनरी नेटवर्क) और वेस्टेंड (पोल्काडॉट का टेस्ट नेटवर्क) पर स्टेकिंग के लिए समर्पित है।"
 
     },
+    source: { icon: "◇", type: "typeScript, scss", url: "https://polkadot.cloud/stake", label: "substrate.dev" }
+  },
+    {
+    x: 0.2572, y: 0.755, colorClass: 'dot-color-red', radius: 5,
+    title: "Cloud staking",
+    text: {
+    en: "Fully featured dashboard for staking and nomination pools on Polkadot. Powered by Dedot, Staking API and W3ux.",
+    es: "Panel de control completo para staking y pools de nominación en Polkadot. Desarrollado por Dedot, Staking API y W3ux",
+    pt: "Painel completo para staking e pools de nomeação na Polkadot. Desenvolvido por Dedot, Staking API e W3ux.",
+    fr: "Tableau de bord complet pour le staking et les pools de nomination sur Polkadot. Propulsé par Dedot, Staking API et W3ux.",
+    de: "Voll ausgestattetes Dashboard für Staking und Nominierungspools auf Polkadot. Betrieben von Dedot, Staking API und W3ux.",
+    af: "Volledig uitgeruste dashboard vir staking en nominasiepoele op Polkadot. Aangedryf deur Dedot, Staking API en W3ux.",
+    zh: "Polkadot 上用于质押和提名池的全功能仪表板。由 Dedot、Staking API 和 W3ux 提供支持。",
+    hi: "पोलकाडॉट पर स्टेकिंग और नॉमिनेशन पूल के लिए पूर्ण सुविधाओं वाला डैशबोर्ड। Dedot, Staking API और W3ux द्वारा संचालित।"
+
+    },
     source: { icon: "◇", type: "typeScript, scss", url: "https://github.com/polkadot-cloud/polkadot-staking-dashboard", label: "substrate.dev" }
   },
   {
-    x: 0.25, y: 0.615, colorClass: 'dot-color-red', radius: 5,
+    x: 0.2, y: 0.52, colorClass: 'dot-color-red', radius: 5,
     title: "Townhall",
     text: {
     en: "Townhall is a social organization management super app designed for DAOs, DeFi protocols, and Communities. It enhances the governance experience by aggregating discussions , on and off chain proposals , treasury analytics and delegation.",
@@ -479,7 +543,7 @@ const dotsData = [
     source: { icon: "◇", type: "JavaScript, TypeScrypt", url: "https://github.com/townhall-gov", label: "substrate.dev" }
   },
   {
-    x: 0.256, y: 0.648, colorClass: 'dot-color-red', radius: 5,
+    x: 0.203, y: 0.55, colorClass: 'dot-color-red', radius: 5,
     title: "PolkaSafe",
     text: {
     en: "Experience a new era of asset management with PolkaSafe. An all-improved. MultiSig experience on the Polkadot Blockchain.",
@@ -495,7 +559,7 @@ const dotsData = [
     source: { icon: "◇", type: "TypeScript", url: "https://github.com/polkasafe", label: "substrate.dev" }
   },
   {
-    x: 0.246, y: 0.721, colorClass: 'dot-color-red', radius: 5,
+    x: 0.246, y: 0.675, colorClass: 'dot-color-red', radius: 5,
     title: "Api Keys",
     text: {
     en: "With Subscan API, we provide a simple way to access the chain data of more than 90 substrate-based networks",
@@ -511,7 +575,7 @@ const dotsData = [
     source: { icon: "◇", type: "TBD", url: "https://support.subscan.io/doc-361776#api-keys", label: "substrate.dev" }
   },
   {
-    x: 0.261, y: 0.754, colorClass: 'dot-color-red', radius: 5,
+    x: 0.261, y: 0.71, colorClass: 'dot-color-red', radius: 5,
     title: "ApiEndpoints",
     text: {
     en: "The following endpoints list is maintained mannually and it might be outdated. In fact, every individual network supported on Subscan.io will have available API endpoint as well. The endpoint naming convention is https://$NETWORK_NAME.api.subscan.io where the $NETWORK_NAME is the same as the subdomain of the corresponding network on Subscan.io." ,
@@ -527,7 +591,7 @@ const dotsData = [
     source: { icon: "◇", type: "shell, javascript, java, swift, go, php, python, http, c, c#, ruby, dart", url: "https://substrate.dev", label: "substrate.dev" }
   },
   {
-    x: 0.268, y: 0.855, colorClass: 'dot-color-red', radius: 5,
+    x: 0.268, y: 0.82, colorClass: 'dot-color-red', radius: 5,
     title: "Interface",
     text: {
     en: "It provides a type-safe interface for submitting transactions, querying on-chain state, and performing other blockchain interactions. By leveraging Rust's strong type system, subxt ensures that your code is validated at compile time, reducing runtime errors and improving reliability.",
@@ -543,8 +607,8 @@ const dotsData = [
     source: { icon: "◇", type: "Rust", url: "https://docs.polkadot.com/develop/toolkit/api-libraries/subxt/", label: "substrate.dev" }
   },
   {
-    x: 0.193, y: 0.848, colorClass: 'dot-color-red', radius: 5,
-    title: "RPC communicate",
+    x: 0.193, y: 0.82, colorClass: 'dot-color-red', radius: 5,
+    title: "RPC´s communicate",
     text: {
     en: " fundamental operations of subxt, from setting up your environment to executing transactions and querying blockchain state.",
     es: "operaciones fundamentales de subxt, desde la configuración de tu entorno hasta la ejecución de transacciones y consultas del estado de la blockchain.",
@@ -591,7 +655,7 @@ const dotsData = [
     source: { icon: "◎", type: "Rust", url: "https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/polkadot_sdk/cumulus/index.html", label: "polkadot.network" }
   },
   {
-    x: 0.446, y: 0.635, colorClass: 'dot-color-green', radius: 7,
+    x: 0.446, y: 0.622, colorClass: 'dot-color-green', radius: 7,
     title: "XCM",
     text: {
     en: "XCM is a standard, specification of which lives in the xcm format repo. It’s agnostic both in programming language and blockchain platform, which means it could be used in Rust in Polkadot, or in Go or C++ in any other platform like Cosmos or Ethereum. It enables different consensus systems to communicate with each other in an expressive manner. Consensus systems include blockchains, smart contracts, and any other state machine that achieves consensus in some way",
@@ -639,7 +703,7 @@ const dotsData = [
     source: { icon: "◎", type: "Info", url: "https://wiki.polkadot.network/learn/maintain-guides-async-backing/#phase-1-update-parachain-runtime", label: "polkadot.network" }
   },
   {
-    x: 0.615, y: 0.665, colorClass: 'dot-color-green', radius: 7,
+    x: 0.615, y: 0.652, colorClass: 'dot-color-green', radius: 7,
     title: "Solochain",
     text: {
     en: "Solochains manage their own consensus and security and do not participate in Polkadot’s cross-chain messaging or shared validation logic by default. They are useful for experimentation, learning, or use cases that do not require integration with the broader Polkadot ecosystem",
@@ -655,7 +719,7 @@ const dotsData = [
     source: { icon: "◎", type: "Rust", url: "https://github.com/paritytech/polkadot-sdk/tree/master/templates/solochain", label: "polkadot.network" }
   },
   {
-    x: 0.605, y: 0.7, colorClass: 'dot-color-green', radius: 7,
+    x: 0.605, y: 0.687, colorClass: 'dot-color-green', radius: 7,
     title: "Dapps",
     text: {
     en: "Polkadot offers developers flexibility in building smart contracts, supporting both Wasm-based contracts using ink! (written in Rust) and Solidity contracts executed by the EVM (Ethereum Virtual Machine).",
@@ -671,7 +735,7 @@ const dotsData = [
     source: { icon: "◎", type: "TBD", url: "https://docs.polkadot.com/develop/smart-contracts/", label: "polkadot.network" }
   },
   {
-    x: 0.613, y: 0.761, colorClass: 'dot-color-green', radius: 7,
+    x: 0.613, y: 0.748, colorClass: 'dot-color-green', radius: 7,
     title: "Pokadot unity sdk",
     text: {
     en: "The Polkadot SDK for Unity is more than just a wallet wrapper; it's a full-fledged solution enabling Unity developers to access blockchain functionalities with ease. Ideal for both gaming and application development, this SDK makes blockchain integration straightforward and efficient.",
@@ -687,7 +751,7 @@ const dotsData = [
     source: { icon: "◎", type: "C#", url: "https://github.com/ajuna-network/Polkadot.Unity.SDK", label: "polkadot.network" }
   },
   {
-    x: 0.613, y: 0.79, colorClass: 'dot-color-green', radius: 7,
+    x: 0.613, y: 0.777, colorClass: 'dot-color-green', radius: 7,
     title: "Polkadot Unreal Engine sdk",
     text: {
     en: "To be defined",
@@ -703,7 +767,7 @@ const dotsData = [
     source: { icon: "◎", type: "C++", url: "https://github.com/ajuna-network/substrate-unreal-engine", label: "polkadot.network" }
   },
   {
-    x: 0.613, y: 0.82, colorClass: 'dot-color-green', radius: 5,
+    x: 0.613, y: 0.807, colorClass: 'dot-color-green', radius: 5,
     title: "Substrate gamming SDK",
     text: {
     en: "With a gaming SDK for substrate (https://github.com/paritytech/substrate/), game developers can easily integrate their games with substrate-based blockchains and take their gaming experience to the next level.",
@@ -719,7 +783,7 @@ const dotsData = [
     source: { icon: "◎", type: "C#, Rust, Solidity", url: "https://github.com/SubstrateGaming/", label: "polkadot.network" }
   },
   {
-    x: 0.605, y: 0.872, colorClass: 'dot-color-green', radius: 5,
+    x: 0.605, y: 0.859, colorClass: 'dot-color-green', radius: 5,
     title: "FRAME",
     text: {
     en: "With Polkadot SDK’s FRAME (Framework for Runtime Aggregation of Modularized Entities), developers gain access to a powerful suite of tools for building custom blockchain runtimes. FRAME offers a modular architecture, featuring reusable pallets and support libraries, to streamline development.",
@@ -735,7 +799,7 @@ const dotsData = [
     source: { icon: "◎", type: "Rust", url: "https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/polkadot_sdk/frame_runtime/index.html", label: "polkadot.network" }
   },
   {
-    x: 0.613, y: 0.888, colorClass: 'dot-color-green', radius: 5,
+    x: 0.613, y: 0.875, colorClass: 'dot-color-green', radius: 5,
     title: "Pallets",
     text: {
     en: "Pallets are modular components within the FRAME ecosystem that encapsulate specific blockchain functionalities. These modules offer customizable business logic for various use cases and features that can be integrated into a runtime.",
@@ -751,7 +815,7 @@ const dotsData = [
     source: { icon: "◎", type: "TBD", url: "https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/polkadot_sdk/frame_runtime/index.html#pallets", label: "polkadot.network" }
   },
   {
-    x: 0.625, y: 0.635, colorClass: 'dot-color-green', radius: 7,
+    x: 0.625, y: 0.622, colorClass: 'dot-color-green', radius: 7,
     title: "Substrate",
     text: {
     en: "Substrate is a Software Development Kit (SDK) that uses Rust-based libraries and tools to enable you to build application-specific blockchains from modular and extensible components. Application-specific blockchains built with Substrate can run as standalone services or in parallel with other chains to take advantage of the shared security provided by the Polkadot ecosystem.",
@@ -767,7 +831,7 @@ const dotsData = [
     source: { icon: "◎", type: "Rust", url: "https://paritytech.github.io/polkadot-sdk/master/polkadot_sdk_docs/polkadot_sdk/substrate/index.html", label: "polkadot.network" }
   },
   {
-    x: 0.693, y: 0.688, colorClass: 'dot-color-green', radius: 5,
+    x: 0.693, y: 0.675, colorClass: 'dot-color-green', radius: 5,
     title: "Solidity",
     text: {
     en: "Moonbeam uses unified accounts, meaning an H160 (Ethereum-style) address is also a valid Substrate address, so you only need a single account to interact with the Substrate runtime and the EVM. Once a balance exists in the EVM, smart contracts can be created and interacted with through standard Ethereum RPC calls.",
@@ -783,7 +847,7 @@ const dotsData = [
     source: { icon: "◎", type: "Solidity", url: "https://docs.moonbeam.network/builders/ethereum/dev-env/", label: "polkadot.network" }
   },
   {
-    x: 0.693, y: 0.665, colorClass: 'dot-color-green', radius: 5,
+    x: 0.693, y: 0.652, colorClass: 'dot-color-green', radius: 5,
     title: "wasm",
     text: {
     en: "Wasm allows developers to write smart contracts in multiple programming languages. This opens up the platform to a broader developer community, enabling them to use languages they are already familiar with, like Rust and C++",
@@ -799,7 +863,7 @@ const dotsData = [
     source: { icon: "◎", type: "Rust, C++, WebAssembly", url: "https://docs.astar.network/docs/build/wasm/smart-contract-wasm/", label: "polkadot.network" }
   },
   {
-    x: 0.716, y: 0.665, colorClass: 'dot-color-green', radius: 5,
+    x: 0.716, y: 0.652, colorClass: 'dot-color-green', radius: 5,
     title: "ink!",
     text: {
     en: "ink! is a programming language for smart contracts — one of several that blockchains built with the Substrate framework can choose from. It’s an opinionated language that we at Parity have built by extending the popular Rust programming language with functionality needed to make it smart contract compatible.",
@@ -815,7 +879,7 @@ const dotsData = [
     source: { icon: "◎", type: "Rust", url: "https://github.com/use-ink/ink", label: "polkadot.network" }
   },
   {
-    x: 0.716, y: 0.688, colorClass: 'dot-color-green', radius: 5,
+    x: 0.716, y: 0.675, colorClass: 'dot-color-green', radius: 5,
     title: "ask!",
     text: {
     en: "Ask! is a framework for AssemblyScript developers to write WASM smart contracts on Substrate FRAME pallet-contracts.",
@@ -831,7 +895,7 @@ const dotsData = [
     source: { icon: "◎", type: "TypeScript", url: "https://github.com/ask-lang/ask", label: "polkadot.network" }
   },
   {
-    x: 0.758, y: 0.688, colorClass: 'dot-color-green', radius: 5,
+    x: 0.758, y: 0.675, colorClass: 'dot-color-green', radius: 5,
     title: "Solang",
     text: {
     en: "Solang, a new Solidity compiler written in rust which uses llvm as the compiler backend. Solang can compile Solidity for Solana and Polkadot Parachains with the contracts pallet",
@@ -847,7 +911,7 @@ const dotsData = [
     source: { icon: "◎", type: "TBD", url: "https://github.com/hyperledger-solang/solang", label: "polkadot.network" }
   },
   {
-    x: 0.74, y: 0.665, colorClass: 'dot-color-green', radius: 5,
+    x: 0.74, y: 0.652, colorClass: 'dot-color-green', radius: 5,
     title: "Pop",
     text: {
     en: "Pop is a development platform for Web3 applications on Polkadot. It provides the necessary tooling and infrastructure to build, test, and deploy your decentralized applications ",
@@ -863,7 +927,7 @@ const dotsData = [
     source: { icon: "◎", type: "Rust", url: "https://onpop.io/", label: "polkadot.network" }
   },
   {
-    x: 0.774, y: 0.665, colorClass: 'dot-color-green', radius: 5,
+    x: 0.774, y: 0.652, colorClass: 'dot-color-green', radius: 5,
     title: "Move",
     text: {
     en: "Smart contracts can directly be implemented and executed as Move scripts or modularized in Move modules. Therefor, the pallet supports publishing of Move modules and the execution of Move scripts to achieve this functionality.",
@@ -879,7 +943,7 @@ const dotsData = [
     source: { icon: "◎", type: "TBD", url: "https://github.com/eigerco/pallet-move", label: "polkadot.network" }
   },
   {
-    x: 0.712, y: 0.768, colorClass: 'dot-color-green', radius: 5,
+    x: 0.712, y: 0.755, colorClass: 'dot-color-green', radius: 5,
     title: "Unity client",
     text: {
     en: "Official Polkadot SDK for Unity: Elevate your projects with effortless blockchain integration for dynamic gaming and unseen web3 app development",
